@@ -1,0 +1,157 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+nav {
+  background-color: #2B2A4C;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav div img {
+  width: 50px;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+  font-weight: 600;
+  padding: 8px 0;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid rgba(233, 225, 222, 0);
+}
+
+nav ul li a:hover {
+  color: orangered;
+  border-bottom: 1px solid orangered;
+}
+
+.menu-icon {
+  /* background-color: tomato; */
+  font-size: 28px;
+  display: none;
+}
+
+main {
+  padding-top: 7rem;
+}
+
+/* ... */
+.hero {
+  background-image: url(/src/public/images/heros/hero-image_2.jpg);
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.hero_inner {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.hero_title {
+  font-weight: 500;
+  font-size: 40px;
+  margin: 0;
+}
+
+.hero_tagline {
+  color: white;
+  margin-top: 16px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+
+.restaurant {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+}
+
+.restaurant-image {
+  width: 150px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  height: 100px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.restaurant-info {
+  flex: 1;
+}
+
+.restaurant-name {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.restaurant-description {
+  margin: 5px 0;
+}
+
+.restaurant-city,
+.restaurant-rating {
+  margin: 3px 0;
+  font-weight: bold;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li:last-of-type {
+    padding-bottom: 8px;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+  }
+}
